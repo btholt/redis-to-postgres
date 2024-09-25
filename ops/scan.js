@@ -24,6 +24,6 @@ export default async function scan(sql, cursor = "0", match, count = 10) {
 
   const res = `*2\r\n$${newCursorString.length}\r\n${newCursorString}\r\n*${
     subset.length
-  }\r\n${response.join("")}\r\n`;
+  }\r\n${response.join("")}`;
   return res;
 }
